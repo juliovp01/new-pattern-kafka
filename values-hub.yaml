@@ -68,6 +68,13 @@ clusterGroup:
       project: lab-project
       path: charts/all/kafka
 
+    kafdrop:
+      name: kafdrop
+      namespace: lab-kafka
+      project: lab-project
+      path: charts/all/kafdrop
+
+
   imperative:
     # NOTE: We *must* use lists and not hashes. As hashes lose ordering once parsed by helm
     # The default schedule is every 10 minutes: imperative.schedule
